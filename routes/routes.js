@@ -124,26 +124,6 @@ router.get('/transactions', async (req, res) => {
       res.status(500).send('Error fetching bar chart data');
     }
   });
-//   router.get('/combined', async (req, res) => {
-//     const { month } = req.query;
-  
-//     try {
-//       const [statistics, barChart, pieChart] = await Promise.all([
-//         axios.get(http://localhost:${process.env.PORT || 3000}/api/statistics, { params: { month } }),
-//         axios.get(http://localhost:${process.env.PORT || 3000}/api/bar-chart, { params: { month } }),
-        
-//       ]);
-  
-//       res.status(200).json({
-//         statistics: statistics.data,
-//         barChart: barChart.data,
-//         pieChart: pieChart.data
-//       });
-//     } catch (error) {
-//       console.error(error);
-//       res.status(500).send('Error fetching combined data');
-//     }
-//   });
-         
+
 
 module.exports = router;
